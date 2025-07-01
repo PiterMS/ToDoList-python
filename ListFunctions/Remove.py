@@ -1,5 +1,5 @@
 # Essa daqui remove uma tarefa da lista
-def remove (a = [], b = None):
+def deletetask (a = [], b = None):
         
         if b == None :
             try:
@@ -11,15 +11,4 @@ def remove (a = [], b = None):
             except ValueError:
                  print('Apenas números')
 
-        for i in range(len(a)):
-        
-            if b - 1 == i:
-                a.pop(i)
-                print(f"A tarefa número {b} foi apagada")
-                return
-            elif b - 1 != i:
-                print(f"{b} não existe")
-                return
-
-        else:
-            a.pop(b-1)
+        a.pop(b-1)
