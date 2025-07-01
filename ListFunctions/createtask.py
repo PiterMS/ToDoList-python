@@ -2,7 +2,7 @@
 def createtask (a = [], b = None):
     if b == None :
         try:
-            b = input("Qual a nova tarefa")
+            b = input("Qual a nova tarefa\n")
             a.append(b)
 
         except KeyboardInterrupt:
